@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS TimeFrames (
+    TFid        INTEGER PRIMARY KEY AUTOINCREMENT,
+    title       TEXT    NOT NULL,
+    description TEXT
+  );
+
+  CREATE TABLE IF NOT EXISTS Events (
+    Eid         INTEGER PRIMARY KEY AUTOINCREMENT,
+    TFid        INTEGER NOT NULL,
+
+    title       TEXT    NOT NULL,
+    description TEXT,
+
+    imgPath     TEXT,
+
+    -- 0 = single date / 1 = period
+    isPeriod    INTEGER NOT NULL,
+
+    isSBCE      BOOLEAN NOT NULL,
+    sYY         INTEGER NOT NULL,
+    sMM         INTEGER,
+    sDD         INTEGER,
+
+    isEBCE      BOOLEAN NOT NULL,
+    eYY         INTEGER,
+    eMM         INTEGER,
+    eDD         INTEGER,
+
+    FOREIGN KEY (TFid) REFERENCES TimeFrames(TFid) ON DELETE CASCADE,

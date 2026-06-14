@@ -1,0 +1,26 @@
+{
+  "timeFrames": [
+    {
+      "TFid":1,
+      "title":"TimeFrame 1",
+      "description":"TimeFrame 1 description",
+      "events":[
+        {
+          "Eid":1,
+          "title":"Abraham Lincoln",
+          "description":"The life of Abraham Lincoln.",
+          "imgPath":"AbrahamLincoln.jpg",
+          "isPeriod":true,
+          "isSBCE":false,
+          "sYY":1809,
+          "sMM":2,
+          "sDD":12,
+          "isEBCE":false,
+          "eYY":1865,
+          "eMM":4,
+          "eDD":15
+        }
+      ]
+    }
+  ]
+}

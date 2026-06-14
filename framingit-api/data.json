@@ -1,26 +1,32 @@
 {
   "timeFrames": [
     {
-      "TFid":1,
-      "title":"TimeFrame 1",
-      "description":"TimeFrame 1 description",
-      "events":[
+      "TFid": 1,
+      "title": "TimeFrame 1",
+      "description": "TimeFrame 1 description V.3",
+      "events": [
         {
-          "Eid":1,
-          "title":"Abraham Lincoln",
-          "description":"The life of Abraham Lincoln.",
-          "imgPath":"AbrahamLincoln.jpg",
-          "isPeriod":true,
-          "isSBCE":false,
-          "sYY":1809,
-          "sMM":2,
-          "sDD":12,
-          "isEBCE":false,
-          "eYY":1865,
-          "eMM":4,
-          "eDD":15
+          "Eid": 1,
+          "title": "Abraham Lincoln",
+          "description": "The life of Abraham Lincoln.",
+          "imgPath": "AbrahamLincoln.jpg",
+          "isPeriod": true,
+          "isSBCE": false,
+          "sYY": 1809,
+          "sMM": 2,
+          "sDD": 12,
+          "isEBCE": false,
+          "eYY": 1865,
+          "eMM": 4,
+          "eDD": 15
         }
       ]
+    },
+    {
+      "TFid": 2,
+      "title": "TimeFrame 2",
+      "description": "TimeFrame 2 description",
+      "events": []
     }
   ]
 }

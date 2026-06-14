@@ -2,12 +2,31 @@
 <html>
   <head>
     <title>FramingIT!</title>
-    <script defer>
-      const API_URL = "http://localhost:3000/api";
-      
-    </script>
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="./index.js" defer></script>
   </head>
   <body>
+    <div id="main-container">
+      <div style="display: flex; flex-direction: column; align-content: center; gap: 10px;">
+        <form id="TF-form">
+          <label for="titleInput">Title:</label>
+          <input type="text" id="titleInput">
 
+          <label for="descriptionInput">Description:</label>
+          <textarea id="descriptionInput"></textarea>
+
+          <button id="btn-submit" type="submit" value="Add the timeframe">Add the timeframe</button>
+        </form>
+
+        <div id="table-container"></div>
+      </div>
+
+      <div id="info-container">
+        <div id="message"></div>
+        <div id="api-log-entries"></div>
+      </div>
+    </div>
   </body>
 </html>

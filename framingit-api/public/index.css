@@ -1,0 +1,100 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div > input {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 15px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+#api-log-entries {
+  margin: 1rem 0;
+}
+
+.message {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.message-success {
+  color: green;
+}
+
+.message-error {
+  color: red;
+}
+
+#table-container {
+  user-select: none;
+}
+
+#table-container,
+#info-container {
+  background-color: rgba(243, 243, 243, 0.3);
+  border: 3px solid rgb(105, 105, 105);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+td > button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  text-align: center;
+}
+
+td > button:hover {
+  cursor: pointer;
+  scale: 120%;
+}
+
+#table-container > table {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-spacing: 5px;
+}
+
+
+#table-container td {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#table-container td:nth-last-child(-n+2) {
+  border: none;
+}
+
+#btn-submit {
+  margin: 10px;
+  background-color: rgb(159, 225, 159);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#btn-submit:hover {
+  background-color: rgb(142, 201, 142);
+}
